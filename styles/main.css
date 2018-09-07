@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem 2rem;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #fc6c58;
+}
+
+header #avatar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+
+header #avatar img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+header #avatar p {
+    padding: .5rem;
+    background: linear-gradient(to right, white, wheat);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+}
+
+nav {
+    border: white 1px solid;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li a {
+    padding: .5rem 2rem;
+    text-align: center;
+    display: inline-block;
+    color: white;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #fc6c58;
+}
+
+.wapper {
+    margin-top: 100px;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.test-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #efefef;
+    padding: 1rem;
+}
+
+.item img {
+    height: 8rem;
+    width: 8rem;
+    border: #fc6c58 2px solid;
+}
+
+.item p {
+    padding: .5rem;
+}
+
+.item p.item-title {
+    font-size: 1.5rem;
+    color: #fc6c58;
+    font-weight: bold;
+}
+
+.item p.item-content {
+    color: #666;
+}
+
+.item button {
+    margin: .5rem;
+    padding: .2rem 1rem;
+    border: 2px solid #354355;
+    color: #354355;
+    font-size: 1.25rem;
+    background-color: transparent;
+}
+
+.item button:hover {
+    color: #efefef;
+    background-color: #354355;
+}
+
+footer {
+    border-top: 4px solid #fc6c58;
+    background-color: #354355!important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .left, footer .right {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
